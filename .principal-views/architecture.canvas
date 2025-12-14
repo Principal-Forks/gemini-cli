@@ -1,0 +1,356 @@
+{
+  "nodes": [
+    {
+      "id": "user",
+      "component": "user",
+      "position": {
+        "x": 100,
+        "y": 200
+      },
+      "label": "User",
+      "x": 50,
+      "y": 60
+    },
+    {
+      "id": "cli",
+      "component": "cli_package",
+      "position": {
+        "x": 300,
+        "y": 200
+      },
+      "label": "CLI Package",
+      "x": 250,
+      "y": 60
+    },
+    {
+      "id": "terminal",
+      "component": "terminal_ui",
+      "position": {
+        "x": 250,
+        "y": 100
+      },
+      "label": "Terminal UI",
+      "x": 450,
+      "y": 60
+    },
+    {
+      "id": "core",
+      "component": "core_package",
+      "position": {
+        "x": 600,
+        "y": 200
+      },
+      "label": "Core Package",
+      "x": 650,
+      "y": 60
+    },
+    {
+      "id": "context",
+      "component": "context_manager",
+      "position": {
+        "x": 500,
+        "y": 50
+      },
+      "label": "Context Manager",
+      "x": 850,
+      "y": 60
+    },
+    {
+      "id": "tools",
+      "component": "tool_registry",
+      "position": {
+        "x": 700,
+        "y": 50
+      },
+      "label": "Tool Registry",
+      "x": 1050,
+      "y": 60
+    },
+    {
+      "id": "confirmation",
+      "component": "confirmation_bus",
+      "position": {
+        "x": 800,
+        "y": 200
+      },
+      "label": "Confirmation Bus",
+      "x": 1250,
+      "y": 60
+    },
+    {
+      "id": "file_service",
+      "component": "file_service",
+      "position": {
+        "x": 400,
+        "y": 350
+      },
+      "label": "File Service",
+      "x": 1450,
+      "y": 60
+    },
+    {
+      "id": "git_service",
+      "component": "git_service",
+      "position": {
+        "x": 550,
+        "y": 350
+      },
+      "label": "Git Service",
+      "x": 1650,
+      "y": 60
+    },
+    {
+      "id": "shell_service",
+      "component": "shell_service",
+      "position": {
+        "x": 700,
+        "y": 350
+      },
+      "label": "Shell Service",
+      "x": 1850,
+      "y": 60
+    },
+    {
+      "id": "model_config",
+      "component": "model_config_service",
+      "position": {
+        "x": 500,
+        "y": 500
+      },
+      "label": "Model Config Service",
+      "x": 2050,
+      "y": 60
+    },
+    {
+      "id": "builtin_tools",
+      "component": "builtin_tools",
+      "position": {
+        "x": 850,
+        "y": 100
+      },
+      "label": "Built-in Tools",
+      "x": 2250,
+      "y": 60
+    },
+    {
+      "id": "mcp_tools",
+      "component": "mcp_tools",
+      "position": {
+        "x": 850,
+        "y": 250
+      },
+      "label": "MCP Tools",
+      "x": 2450,
+      "y": 60
+    },
+    {
+      "id": "policy_engine",
+      "component": "policy_engine",
+      "position": {
+        "x": 300,
+        "y": 500
+      },
+      "label": "Policy Engine",
+      "x": 2650,
+      "y": 60
+    },
+    {
+      "id": "config_system",
+      "component": "config_system",
+      "position": {
+        "x": 150,
+        "y": 500
+      },
+      "label": "Config System",
+      "x": 2850,
+      "y": 60
+    },
+    {
+      "id": "gemini_api",
+      "component": "gemini_api",
+      "position": {
+        "x": 1100,
+        "y": 200
+      },
+      "label": "Gemini API",
+      "x": 3050,
+      "y": 60
+    },
+    {
+      "id": "vscode",
+      "component": "vscode_extension",
+      "position": {
+        "x": 200,
+        "y": -50
+      },
+      "label": "VS Code Extension",
+      "x": 3250,
+      "y": 60
+    },
+    {
+      "id": "a2a_server",
+      "component": "a2a_server",
+      "position": {
+        "x": 1100,
+        "y": 350
+      },
+      "label": "A2A Server",
+      "x": 3450,
+      "y": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "user_to_cli",
+      "from": "user",
+      "to": "cli",
+      "component": "data_flow",
+      "label": "commands",
+      "style": "solid"
+    },
+    {
+      "id": "cli_to_terminal",
+      "from": "cli",
+      "to": "terminal",
+      "component": "data_flow",
+      "label": "render",
+      "style": "solid"
+    },
+    {
+      "id": "cli_to_core",
+      "from": "cli",
+      "to": "core",
+      "component": "data_flow",
+      "label": "requests",
+      "style": "solid"
+    },
+    {
+      "id": "core_to_context",
+      "from": "core",
+      "to": "context",
+      "component": "data_flow",
+      "label": "manages",
+      "style": "solid"
+    },
+    {
+      "id": "core_to_tools",
+      "from": "core",
+      "to": "tools",
+      "component": "tool_execution",
+      "label": "invokes",
+      "style": "solid"
+    },
+    {
+      "id": "tools_to_confirmation",
+      "from": "tools",
+      "to": "confirmation",
+      "component": "data_flow",
+      "label": "requires_approval",
+      "style": "solid"
+    },
+    {
+      "id": "confirmation_to_cli",
+      "from": "confirmation",
+      "to": "cli",
+      "component": "data_flow",
+      "label": "prompts_user",
+      "style": "solid"
+    },
+    {
+      "id": "tools_to_builtin",
+      "from": "tools",
+      "to": "builtin_tools",
+      "component": "extension_point",
+      "label": "loads",
+      "style": "dashed"
+    },
+    {
+      "id": "tools_to_mcp",
+      "from": "tools",
+      "to": "mcp_tools",
+      "component": "extension_point",
+      "label": "loads",
+      "style": "dashed"
+    },
+    {
+      "id": "builtin_to_file",
+      "from": "builtin_tools",
+      "to": "file_service",
+      "component": "tool_execution",
+      "label": "uses",
+      "style": "solid"
+    },
+    {
+      "id": "builtin_to_git",
+      "from": "builtin_tools",
+      "to": "git_service",
+      "component": "tool_execution",
+      "label": "uses",
+      "style": "solid"
+    },
+    {
+      "id": "builtin_to_shell",
+      "from": "builtin_tools",
+      "to": "shell_service",
+      "component": "tool_execution",
+      "label": "uses",
+      "style": "solid"
+    },
+    {
+      "id": "core_to_gemini",
+      "from": "core",
+      "to": "gemini_api",
+      "component": "api_call",
+      "label": "communicates",
+      "style": "dashed"
+    },
+    {
+      "id": "core_to_model_config",
+      "from": "core",
+      "to": "model_config",
+      "component": "configuration",
+      "label": "configured_by",
+      "style": "dotted"
+    },
+    {
+      "id": "policy_to_core",
+      "from": "policy_engine",
+      "to": "core",
+      "component": "configuration",
+      "label": "restricts",
+      "style": "dotted"
+    },
+    {
+      "id": "config_to_policy",
+      "from": "config_system",
+      "to": "policy_engine",
+      "component": "configuration",
+      "label": "defines",
+      "style": "dotted"
+    },
+    {
+      "id": "config_to_core",
+      "from": "config_system",
+      "to": "core",
+      "component": "configuration",
+      "label": "configures",
+      "style": "dotted"
+    },
+    {
+      "id": "vscode_to_cli",
+      "from": "vscode",
+      "to": "cli",
+      "component": "extension_point",
+      "label": "integrates",
+      "style": "dashed"
+    },
+    {
+      "id": "core_to_a2a",
+      "from": "core",
+      "to": "a2a_server",
+      "component": "api_call",
+      "label": "communicates",
+      "style": "dashed"
+    }
+  ]
+}
