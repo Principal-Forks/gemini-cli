@@ -7,3 +7,6 @@ npm run pre-commit || {
   echo '===================================================='
   exit 1
 }
+
+# Run principal view linting
+privu lint --quiet

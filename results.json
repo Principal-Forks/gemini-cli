@@ -1,0 +1,1489 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-14T02:42:38.305Z",
+    "version": "1.0.0",
+    "totalPackages": 6,
+    "totalLenses": 21
+  },
+  "results": [
+    {
+      "package": {
+        "name": "@google/gemini-cli",
+        "path": ""
+      },
+      "lens": {
+        "id": "test",
+        "command": "test"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 9172,
+        "timestamp": 1765680111802
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 519,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "totalTests": 0,
+          "passedTests": 0,
+          "failedTests": 0,
+          "skippedTests": 0,
+          "testSuites": 519,
+          "passedSuites": 0,
+          "failedSuites": 519,
+          "passRate": 0,
+          "duration": 0,
+          "slowestTests": [],
+          "snapshot": {
+            "total": 0,
+            "matched": 0,
+            "unmatched": 0,
+            "updated": 0
+          }
+        }
+      },
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli",
+        "path": ""
+      },
+      "lens": {
+        "id": "eslint",
+        "command": "lint"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 2,
+        "duration": 1732,
+        "timestamp": 1765680113536
+      },
+      "issues": [],
+      "metrics": {},
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli",
+        "path": ""
+      },
+      "lens": {
+        "id": "prettier",
+        "command": "format"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 12856,
+        "timestamp": 1765680126393
+      },
+      "issues": [
+        {
+          "file": ".privurc.yaml",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "docs/ide-integration/ide-companion-spec.md",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/cli/src/gemini_cleanup.test.tsx",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/cli/src/gemini.test.tsx",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/cli/src/nonInteractiveCli.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/cli/src/ui/AppContainer.tsx",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/cli/src/ui/utils/commandUtils.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/code_assist/oauth2.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/core/client.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/mcp/token-storage/hybrid-token-storage.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/mcp/token-storage/keychain-token-storage.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/policy/config.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/services/sessionSummaryUtils.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/services/shellExecutionService.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/tools/modifiable-tool.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "packages/core/src/tools/tools.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        }
+      ],
+      "metrics": {
+        "filesAnalyzed": 16,
+        "totalIssues": 16,
+        "issuesBySeverity": {
+          "error": 16,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesNeedingFormatting": 16,
+          "formattingCompliance": 0
+        }
+      },
+      "fileMetrics": [
+        {
+          "file": ".privurc.yaml",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "docs/ide-integration/ide-companion-spec.md",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/cli/src/gemini_cleanup.test.tsx",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/cli/src/gemini.test.tsx",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/cli/src/nonInteractiveCli.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/cli/src/ui/AppContainer.tsx",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/cli/src/ui/utils/commandUtils.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/code_assist/oauth2.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/core/client.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/mcp/token-storage/hybrid-token-storage.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/mcp/token-storage/keychain-token-storage.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/policy/config.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/services/sessionSummaryUtils.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/services/shellExecutionService.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/tools/modifiable-tool.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "packages/core/src/tools/tools.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        }
+      ],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli",
+        "path": ""
+      },
+      "lens": {
+        "id": "typescript",
+        "command": "typecheck"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 582,
+        "timestamp": 1765680126976
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 6,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesWithErrors": 0,
+          "totalErrors": 0,
+          "totalWarnings": 0,
+          "totalSuggestions": 0,
+          "uniqueErrorCodes": 0,
+          "topErrors": []
+        }
+      },
+      "fileMetrics": [],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-a2a-server",
+        "path": "packages/a2a-server"
+      },
+      "lens": {
+        "id": "eslint",
+        "command": "lint"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 2,
+        "duration": 626,
+        "timestamp": 1765680127602
+      },
+      "issues": [],
+      "metrics": {},
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-a2a-server",
+        "path": "packages/a2a-server"
+      },
+      "lens": {
+        "id": "prettier",
+        "command": "format"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 0,
+        "duration": 1028,
+        "timestamp": 1765680128630
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 0,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesNeedingFormatting": 0,
+          "formattingCompliance": 100
+        }
+      },
+      "fileMetrics": [],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-a2a-server",
+        "path": "packages/a2a-server"
+      },
+      "lens": {
+        "id": "test",
+        "command": "test"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 1686,
+        "timestamp": 1765680130318
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 9,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "totalTests": 0,
+          "passedTests": 0,
+          "failedTests": 0,
+          "skippedTests": 0,
+          "testSuites": 9,
+          "passedSuites": 0,
+          "failedSuites": 9,
+          "passRate": 0,
+          "duration": 0,
+          "slowestTests": [],
+          "snapshot": {
+            "total": 0,
+            "matched": 0,
+            "unmatched": 0,
+            "updated": 0
+          }
+        }
+      },
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-a2a-server",
+        "path": "packages/a2a-server"
+      },
+      "lens": {
+        "id": "typescript",
+        "command": "typecheck"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 614,
+        "timestamp": 1765680130963
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 6,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesWithErrors": 0,
+          "totalErrors": 0,
+          "totalWarnings": 0,
+          "totalSuggestions": 0,
+          "uniqueErrorCodes": 0,
+          "topErrors": []
+        }
+      },
+      "fileMetrics": [],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli",
+        "path": "packages/cli"
+      },
+      "lens": {
+        "id": "eslint",
+        "command": "lint"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 2,
+        "duration": 640,
+        "timestamp": 1765680131604
+      },
+      "issues": [],
+      "metrics": {},
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli",
+        "path": "packages/cli"
+      },
+      "lens": {
+        "id": "prettier",
+        "command": "format"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 5591,
+        "timestamp": 1765680137195
+      },
+      "issues": [
+        {
+          "file": "src/gemini_cleanup.test.tsx",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/gemini.test.tsx",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/nonInteractiveCli.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/ui/AppContainer.tsx",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/ui/utils/commandUtils.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        }
+      ],
+      "metrics": {
+        "filesAnalyzed": 5,
+        "totalIssues": 5,
+        "issuesBySeverity": {
+          "error": 5,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesNeedingFormatting": 5,
+          "formattingCompliance": 0
+        }
+      },
+      "fileMetrics": [
+        {
+          "file": "src/gemini_cleanup.test.tsx",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/gemini.test.tsx",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/nonInteractiveCli.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/ui/AppContainer.tsx",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/ui/utils/commandUtils.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        }
+      ],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli",
+        "path": "packages/cli"
+      },
+      "lens": {
+        "id": "test",
+        "command": "test"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 5639,
+        "timestamp": 1765680142839
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 286,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "totalTests": 0,
+          "passedTests": 0,
+          "failedTests": 0,
+          "skippedTests": 0,
+          "testSuites": 286,
+          "passedSuites": 0,
+          "failedSuites": 286,
+          "passRate": 0,
+          "duration": 0,
+          "slowestTests": [],
+          "snapshot": {
+            "total": 0,
+            "matched": 0,
+            "unmatched": 0,
+            "updated": 0
+          }
+        }
+      },
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli",
+        "path": "packages/cli"
+      },
+      "lens": {
+        "id": "typescript",
+        "command": "typecheck"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 569,
+        "timestamp": 1765680143408
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 6,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesWithErrors": 0,
+          "totalErrors": 0,
+          "totalWarnings": 0,
+          "totalSuggestions": 0,
+          "uniqueErrorCodes": 0,
+          "topErrors": []
+        }
+      },
+      "fileMetrics": [],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-core",
+        "path": "packages/core"
+      },
+      "lens": {
+        "id": "eslint",
+        "command": "lint"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 2,
+        "duration": 806,
+        "timestamp": 1765680144215
+      },
+      "issues": [],
+      "metrics": {},
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-core",
+        "path": "packages/core"
+      },
+      "lens": {
+        "id": "prettier",
+        "command": "format"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 4963,
+        "timestamp": 1765680149178
+      },
+      "issues": [
+        {
+          "file": "src/code_assist/oauth2.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/core/client.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/mcp/token-storage/hybrid-token-storage.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/mcp/token-storage/keychain-token-storage.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/policy/config.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/services/sessionSummaryUtils.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/services/shellExecutionService.test.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/tools/modifiable-tool.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        },
+        {
+          "file": "src/tools/tools.ts",
+          "line": 1,
+          "column": 1,
+          "severity": "error",
+          "message": "File is not formatted according to Prettier rules",
+          "rule": "prettier",
+          "source": "prettier",
+          "category": "formatting"
+        }
+      ],
+      "metrics": {
+        "filesAnalyzed": 9,
+        "totalIssues": 9,
+        "issuesBySeverity": {
+          "error": 9,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesNeedingFormatting": 9,
+          "formattingCompliance": 0
+        }
+      },
+      "fileMetrics": [
+        {
+          "file": "src/code_assist/oauth2.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/core/client.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/mcp/token-storage/hybrid-token-storage.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/mcp/token-storage/keychain-token-storage.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/policy/config.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/services/sessionSummaryUtils.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/services/shellExecutionService.test.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/tools/modifiable-tool.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        },
+        {
+          "file": "src/tools/tools.ts",
+          "score": 90,
+          "issueCount": 1,
+          "errorCount": 1,
+          "warningCount": 0,
+          "infoCount": 0,
+          "hintCount": 0,
+          "categories": {
+            "formatting": 1
+          }
+        }
+      ],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-core",
+        "path": "packages/core"
+      },
+      "lens": {
+        "id": "test",
+        "command": "test"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 3754,
+        "timestamp": 1765680152934
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 191,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "totalTests": 0,
+          "passedTests": 0,
+          "failedTests": 0,
+          "skippedTests": 0,
+          "testSuites": 191,
+          "passedSuites": 0,
+          "failedSuites": 191,
+          "passRate": 0,
+          "duration": 0,
+          "slowestTests": [],
+          "snapshot": {
+            "total": 0,
+            "matched": 0,
+            "unmatched": 0,
+            "updated": 0
+          }
+        }
+      },
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-core",
+        "path": "packages/core"
+      },
+      "lens": {
+        "id": "typescript",
+        "command": "typecheck"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 999,
+        "timestamp": 1765680153934
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 6,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesWithErrors": 0,
+          "totalErrors": 0,
+          "totalWarnings": 0,
+          "totalSuggestions": 0,
+          "uniqueErrorCodes": 0,
+          "topErrors": []
+        }
+      },
+      "fileMetrics": [],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@google/gemini-cli-test-utils",
+        "path": "packages/test-utils"
+      },
+      "lens": {
+        "id": "typescript",
+        "command": "typecheck"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 671,
+        "timestamp": 1765680154606
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 6,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesWithErrors": 0,
+          "totalErrors": 0,
+          "totalWarnings": 0,
+          "totalSuggestions": 0,
+          "uniqueErrorCodes": 0,
+          "topErrors": []
+        }
+      },
+      "fileMetrics": [],
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "gemini-cli-vscode-ide-companion",
+        "path": "packages/vscode-ide-companion"
+      },
+      "lens": {
+        "id": "eslint",
+        "command": "lint"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 2,
+        "duration": 777,
+        "timestamp": 1765680155383
+      },
+      "issues": [],
+      "metrics": {},
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "gemini-cli-vscode-ide-companion",
+        "path": "packages/vscode-ide-companion"
+      },
+      "lens": {
+        "id": "test",
+        "command": "test"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 1,
+        "duration": 1299,
+        "timestamp": 1765680156684
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 3,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "totalTests": 0,
+          "passedTests": 0,
+          "failedTests": 0,
+          "skippedTests": 0,
+          "testSuites": 3,
+          "passedSuites": 0,
+          "failedSuites": 3,
+          "passRate": 0,
+          "duration": 0,
+          "slowestTests": [],
+          "snapshot": {
+            "total": 0,
+            "matched": 0,
+            "unmatched": 0,
+            "updated": 0
+          }
+        }
+      },
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@lvce-editor/ripgrep",
+        "path": "third_party/get-ripgrep"
+      },
+      "lens": {
+        "id": "test",
+        "command": "test"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 0,
+        "duration": 841,
+        "timestamp": 1765680157525
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 0,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "totalTests": 0,
+          "passedTests": 0,
+          "failedTests": 0,
+          "skippedTests": 0,
+          "testSuites": 0,
+          "passedSuites": 0,
+          "failedSuites": 0,
+          "passRate": 0,
+          "duration": 0,
+          "slowestTests": [],
+          "snapshot": {
+            "total": 0,
+            "matched": 0,
+            "unmatched": 0,
+            "updated": 0
+          }
+        }
+      },
+      "qualityContext": {}
+    },
+    {
+      "package": {
+        "name": "@lvce-editor/ripgrep",
+        "path": "third_party/get-ripgrep"
+      },
+      "lens": {
+        "id": "prettier",
+        "command": "format"
+      },
+      "execution": {
+        "success": true,
+        "exitCode": 0,
+        "duration": 780,
+        "timestamp": 1765680158305
+      },
+      "issues": [],
+      "metrics": {
+        "filesAnalyzed": 0,
+        "totalIssues": 0,
+        "issuesBySeverity": {
+          "error": 0,
+          "warning": 0,
+          "info": 0,
+          "hint": 0
+        },
+        "executionTime": 0,
+        "custom": {
+          "filesNeedingFormatting": 0,
+          "formattingCompliance": 100
+        }
+      },
+      "fileMetrics": [],
+      "qualityContext": {}
+    }
+  ],
+  "qualityMetrics": {
+    "packages": [
+      {
+        "name": "@google/gemini-cli",
+        "path": "",
+        "hexagon": {
+          "tests": 100,
+          "deadCode": 0,
+          "formatting": 70,
+          "linting": 0,
+          "types": 100,
+          "documentation": 0
+        }
+      },
+      {
+        "name": "@google/gemini-cli-a2a-server",
+        "path": "packages/a2a-server",
+        "hexagon": {
+          "tests": 100,
+          "deadCode": 0,
+          "formatting": 100,
+          "linting": 0,
+          "types": 100,
+          "documentation": 0
+        }
+      },
+      {
+        "name": "@google/gemini-cli-core",
+        "path": "packages/core",
+        "hexagon": {
+          "tests": 100,
+          "deadCode": 0,
+          "formatting": 70,
+          "linting": 0,
+          "types": 100,
+          "documentation": 0
+        }
+      },
+      {
+        "name": "@google/gemini-cli-test-utils",
+        "path": "packages/test-utils",
+        "hexagon": {
+          "tests": 0,
+          "deadCode": 0,
+          "formatting": 0,
+          "linting": 0,
+          "types": 100,
+          "documentation": 0
+        }
+      },
+      {
+        "name": "gemini-cli-vscode-ide-companion",
+        "path": "packages/vscode-ide-companion",
+        "hexagon": {
+          "tests": 100,
+          "deadCode": 0,
+          "formatting": 0,
+          "linting": 0,
+          "types": 0,
+          "documentation": 0
+        }
+      },
+      {
+        "name": "@lvce-editor/ripgrep",
+        "path": "third_party/get-ripgrep",
+        "hexagon": {
+          "tests": 100,
+          "deadCode": 0,
+          "formatting": 100,
+          "linting": 0,
+          "types": 0,
+          "documentation": 0
+        }
+      }
+    ]
+  }
+}
