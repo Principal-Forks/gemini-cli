@@ -1,356 +1,433 @@
 {
+  "pv": {
+    "name": "Gemini CLI Architecture",
+    "version": "1.0.0"
+  },
   "nodes": [
     {
       "id": "user",
-      "component": "user",
-      "position": {
-        "x": 100,
-        "y": 200
-      },
-      "label": "User",
+      "type": "text",
       "x": 50,
-      "y": 60
+      "y": 60,
+      "width": 120,
+      "height": 80,
+      "color": "#4285F4",
+      "text": "User",
+      "pv": {
+        "nodeType": "user",
+        "shape": "person"
+      }
     },
     {
       "id": "cli",
-      "component": "cli_package",
-      "position": {
-        "x": 300,
-        "y": 200
-      },
-      "label": "CLI Package",
+      "type": "text",
       "x": 250,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#4285F4",
+      "text": "CLI Package",
+      "pv": {
+        "nodeType": "cli_package",
+        "shape": "rectangle"
+      }
     },
     {
       "id": "terminal",
-      "component": "terminal_ui",
-      "position": {
-        "x": 250,
-        "y": 100
-      },
-      "label": "Terminal UI",
+      "type": "text",
       "x": 450,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#34A853",
+      "text": "Terminal UI",
+      "pv": {
+        "nodeType": "terminal_ui",
+        "shape": "rectangle"
+      }
     },
     {
       "id": "core",
-      "component": "core_package",
-      "position": {
-        "x": 600,
-        "y": 200
-      },
-      "label": "Core Package",
+      "type": "text",
       "x": 650,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#EA4335",
+      "text": "Core Package",
+      "pv": {
+        "nodeType": "core_package",
+        "shape": "rectangle"
+      }
     },
     {
       "id": "context",
-      "component": "context_manager",
-      "position": {
-        "x": 500,
-        "y": 50
-      },
-      "label": "Context Manager",
+      "type": "text",
       "x": 850,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#FBBC04",
+      "text": "Context Manager",
+      "pv": {
+        "nodeType": "context_manager",
+        "shape": "ellipse"
+      }
     },
     {
       "id": "tools",
-      "component": "tool_registry",
-      "position": {
-        "x": 700,
-        "y": 50
-      },
-      "label": "Tool Registry",
+      "type": "text",
       "x": 1050,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#FF6D01",
+      "text": "Tool Registry",
+      "pv": {
+        "nodeType": "tool_registry",
+        "shape": "ellipse"
+      }
     },
     {
       "id": "confirmation",
-      "component": "confirmation_bus",
-      "position": {
-        "x": 800,
-        "y": 200
-      },
-      "label": "Confirmation Bus",
+      "type": "text",
       "x": 1250,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#9AA0A6",
+      "text": "Confirmation Bus",
+      "pv": {
+        "nodeType": "confirmation_bus",
+        "shape": "diamond"
+      }
     },
     {
       "id": "file_service",
-      "component": "file_service",
-      "position": {
-        "x": 400,
-        "y": 350
-      },
-      "label": "File Service",
+      "type": "text",
       "x": 1450,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#0F9D58",
+      "text": "File Service",
+      "pv": {
+        "nodeType": "file_service",
+        "shape": "rectangle"
+      }
     },
     {
       "id": "git_service",
-      "component": "git_service",
-      "position": {
-        "x": 550,
-        "y": 350
-      },
-      "label": "Git Service",
+      "type": "text",
       "x": 1650,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#F4B400",
+      "text": "Git Service",
+      "pv": {
+        "nodeType": "git_service",
+        "shape": "rectangle"
+      }
     },
     {
       "id": "shell_service",
-      "component": "shell_service",
-      "position": {
-        "x": 700,
-        "y": 350
-      },
-      "label": "Shell Service",
+      "type": "text",
       "x": 1850,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#DB4437",
+      "text": "Shell Service",
+      "pv": {
+        "nodeType": "shell_service",
+        "shape": "rectangle"
+      }
     },
     {
       "id": "model_config",
-      "component": "model_config_service",
-      "position": {
-        "x": 500,
-        "y": 500
-      },
-      "label": "Model Config Service",
+      "type": "text",
       "x": 2050,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#673AB7",
+      "text": "Model Config Service",
+      "pv": {
+        "nodeType": "model_config_service",
+        "shape": "rectangle"
+      }
     },
     {
       "id": "builtin_tools",
-      "component": "builtin_tools",
-      "position": {
-        "x": 850,
-        "y": 100
-      },
-      "label": "Built-in Tools",
+      "type": "text",
       "x": 2250,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#607D8B",
+      "text": "Built-in Tools",
+      "pv": {
+        "nodeType": "builtin_tools",
+        "shape": "hexagon"
+      }
     },
     {
       "id": "mcp_tools",
-      "component": "mcp_tools",
-      "position": {
-        "x": 850,
-        "y": 250
-      },
-      "label": "MCP Tools",
+      "type": "text",
       "x": 2450,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#795548",
+      "text": "MCP Tools",
+      "pv": {
+        "nodeType": "mcp_tools",
+        "shape": "hexagon"
+      }
     },
     {
       "id": "policy_engine",
-      "component": "policy_engine",
-      "position": {
-        "x": 300,
-        "y": 500
-      },
-      "label": "Policy Engine",
+      "type": "text",
       "x": 2650,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#E91E63",
+      "text": "Policy Engine",
+      "pv": {
+        "nodeType": "policy_engine",
+        "shape": "shield"
+      }
     },
     {
       "id": "config_system",
-      "component": "config_system",
-      "position": {
-        "x": 150,
-        "y": 500
-      },
-      "label": "Config System",
+      "type": "text",
       "x": 2850,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#9C27B0",
+      "text": "Config System",
+      "pv": {
+        "nodeType": "config_system",
+        "shape": "gear"
+      }
     },
     {
       "id": "gemini_api",
-      "component": "gemini_api",
-      "position": {
-        "x": 1100,
-        "y": 200
-      },
-      "label": "Gemini API",
+      "type": "text",
       "x": 3050,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#4285F4",
+      "text": "Gemini API",
+      "pv": {
+        "nodeType": "gemini_api",
+        "shape": "cloud"
+      }
     },
     {
       "id": "vscode",
-      "component": "vscode_extension",
-      "position": {
-        "x": 200,
-        "y": -50
-      },
-      "label": "VS Code Extension",
+      "type": "text",
       "x": 3250,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#007ACC",
+      "text": "VS Code Extension",
+      "pv": {
+        "nodeType": "vscode_extension",
+        "shape": "rectangle"
+      }
     },
     {
       "id": "a2a_server",
-      "component": "a2a_server",
-      "position": {
-        "x": 1100,
-        "y": 350
-      },
-      "label": "A2A Server",
+      "type": "text",
       "x": 3450,
-      "y": 60
+      "y": 60,
+      "width": 140,
+      "height": 80,
+      "color": "#FF5722",
+      "text": "A2A Server",
+      "pv": {
+        "nodeType": "a2a_server",
+        "shape": "rectangle"
+      }
     }
   ],
   "edges": [
     {
       "id": "user_to_cli",
-      "from": "user",
-      "to": "cli",
-      "component": "data_flow",
+      "fromNode": "user",
+      "toNode": "cli",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "commands",
-      "style": "solid"
+      "color": "#FBBC04"
     },
     {
       "id": "cli_to_terminal",
-      "from": "cli",
-      "to": "terminal",
-      "component": "data_flow",
+      "fromNode": "cli",
+      "toNode": "terminal",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "render",
-      "style": "solid"
+      "color": "#FBBC04"
     },
     {
       "id": "cli_to_core",
-      "from": "cli",
-      "to": "core",
-      "component": "data_flow",
+      "fromNode": "cli",
+      "toNode": "core",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "requests",
-      "style": "solid"
+      "color": "#FBBC04"
     },
     {
       "id": "core_to_context",
-      "from": "core",
-      "to": "context",
-      "component": "data_flow",
+      "fromNode": "core",
+      "toNode": "context",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "manages",
-      "style": "solid"
+      "color": "#FBBC04"
     },
     {
       "id": "core_to_tools",
-      "from": "core",
-      "to": "tools",
-      "component": "tool_execution",
+      "fromNode": "core",
+      "toNode": "tools",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "invokes",
-      "style": "solid"
+      "color": "#EA4335"
     },
     {
       "id": "tools_to_confirmation",
-      "from": "tools",
-      "to": "confirmation",
-      "component": "data_flow",
+      "fromNode": "tools",
+      "toNode": "confirmation",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "requires_approval",
-      "style": "solid"
+      "color": "#FBBC04"
     },
     {
       "id": "confirmation_to_cli",
-      "from": "confirmation",
-      "to": "cli",
-      "component": "data_flow",
+      "fromNode": "confirmation",
+      "toNode": "cli",
+      "fromSide": "left",
+      "toSide": "bottom",
       "label": "prompts_user",
-      "style": "solid"
+      "color": "#FBBC04"
     },
     {
       "id": "tools_to_builtin",
-      "from": "tools",
-      "to": "builtin_tools",
-      "component": "extension_point",
+      "fromNode": "tools",
+      "toNode": "builtin_tools",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "loads",
-      "style": "dashed"
+      "color": "#FF6D01"
     },
     {
       "id": "tools_to_mcp",
-      "from": "tools",
-      "to": "mcp_tools",
-      "component": "extension_point",
+      "fromNode": "tools",
+      "toNode": "mcp_tools",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "loads",
-      "style": "dashed"
+      "color": "#FF6D01"
     },
     {
       "id": "builtin_to_file",
-      "from": "builtin_tools",
-      "to": "file_service",
-      "component": "tool_execution",
+      "fromNode": "builtin_tools",
+      "toNode": "file_service",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "uses",
-      "style": "solid"
+      "color": "#EA4335"
     },
     {
       "id": "builtin_to_git",
-      "from": "builtin_tools",
-      "to": "git_service",
-      "component": "tool_execution",
+      "fromNode": "builtin_tools",
+      "toNode": "git_service",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "uses",
-      "style": "solid"
+      "color": "#EA4335"
     },
     {
       "id": "builtin_to_shell",
-      "from": "builtin_tools",
-      "to": "shell_service",
-      "component": "tool_execution",
+      "fromNode": "builtin_tools",
+      "toNode": "shell_service",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "uses",
-      "style": "solid"
+      "color": "#EA4335"
     },
     {
       "id": "core_to_gemini",
-      "from": "core",
-      "to": "gemini_api",
-      "component": "api_call",
+      "fromNode": "core",
+      "toNode": "gemini_api",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "communicates",
-      "style": "dashed"
+      "color": "#34A853"
     },
     {
       "id": "core_to_model_config",
-      "from": "core",
-      "to": "model_config",
-      "component": "configuration",
+      "fromNode": "core",
+      "toNode": "model_config",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "configured_by",
-      "style": "dotted"
+      "color": "#9AA0A6"
     },
     {
       "id": "policy_to_core",
-      "from": "policy_engine",
-      "to": "core",
-      "component": "configuration",
+      "fromNode": "policy_engine",
+      "toNode": "core",
+      "fromSide": "right",
+      "toSide": "bottom",
       "label": "restricts",
-      "style": "dotted"
+      "color": "#9AA0A6"
     },
     {
       "id": "config_to_policy",
-      "from": "config_system",
-      "to": "policy_engine",
-      "component": "configuration",
+      "fromNode": "config_system",
+      "toNode": "policy_engine",
+      "fromSide": "right",
+      "toSide": "left",
       "label": "defines",
-      "style": "dotted"
+      "color": "#9AA0A6"
     },
     {
       "id": "config_to_core",
-      "from": "config_system",
-      "to": "core",
-      "component": "configuration",
+      "fromNode": "config_system",
+      "toNode": "core",
+      "fromSide": "right",
+      "toSide": "bottom",
       "label": "configures",
-      "style": "dotted"
+      "color": "#9AA0A6"
     },
     {
       "id": "vscode_to_cli",
-      "from": "vscode",
-      "to": "cli",
-      "component": "extension_point",
+      "fromNode": "vscode",
+      "toNode": "cli",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "integrates",
-      "style": "dashed"
+      "color": "#FF6D01"
     },
     {
       "id": "core_to_a2a",
-      "from": "core",
-      "to": "a2a_server",
-      "component": "api_call",
+      "fromNode": "core",
+      "toNode": "a2a_server",
+      "fromSide": "bottom",
+      "toSide": "top",
       "label": "communicates",
-      "style": "dashed"
+      "color": "#34A853"
     }
   ]
 }

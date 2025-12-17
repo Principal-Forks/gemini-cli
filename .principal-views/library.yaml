@@ -1,0 +1,131 @@
+version: '1.0.0'
+name: 'Gemini CLI Component Library'
+
+nodeComponents:
+  # External Actors
+  user:
+    description: 'Human user interacting with the CLI'
+    color: '#4285F4'
+    shape: 'person'
+
+  # User Interface Layer
+  cli_package:
+    description: 'Terminal UI and user interaction layer using React Ink'
+    color: '#4285F4'
+    shape: 'rectangle'
+
+  terminal_ui:
+    description: 'React Ink components for terminal rendering'
+    color: '#34A853'
+    shape: 'rectangle'
+
+  # Core Business Logic
+  core_package:
+    description: 'Business logic, model communication, and tool orchestration'
+    color: '#EA4335'
+    shape: 'rectangle'
+
+  context_manager:
+    description: 'Session history and context compression'
+    color: '#FBBC04'
+    shape: 'ellipse'
+
+  tool_registry:
+    description: 'Tool discovery, validation, and execution management'
+    color: '#FF6D01'
+    shape: 'ellipse'
+
+  confirmation_bus:
+    description: 'Tool execution approval workflow'
+    color: '#9AA0A6'
+    shape: 'diamond'
+
+  # Services Layer
+  file_service:
+    description: 'File operations and workspace discovery'
+    color: '#0F9D58'
+    shape: 'rectangle'
+
+  git_service:
+    description: 'Version control operations'
+    color: '#F4B400'
+    shape: 'rectangle'
+
+  shell_service:
+    description: 'Command execution with safety controls'
+    color: '#DB4437'
+    shape: 'rectangle'
+
+  model_config_service:
+    description: 'Model selection and routing'
+    color: '#673AB7'
+    shape: 'rectangle'
+
+  # Tools
+  builtin_tools:
+    description: 'Core file, search, and shell tools'
+    color: '#607D8B'
+    shape: 'hexagon'
+
+  mcp_tools:
+    description: 'External tools via Model Context Protocol'
+    color: '#795548'
+    shape: 'hexagon'
+
+  # External Systems
+  gemini_api:
+    description: "Google's Generative AI models"
+    color: '#4285F4'
+    shape: 'cloud'
+
+  vscode_extension:
+    description: 'IDE integration for enhanced workspace access'
+    color: '#007ACC'
+    shape: 'rectangle'
+
+  a2a_server:
+    description: 'Agent-to-Agent communication server'
+    color: '#FF5722'
+    shape: 'rectangle'
+
+  # Configuration & Policy
+  policy_engine:
+    description: 'Security policies and access control'
+    color: '#E91E63'
+    shape: 'shield'
+
+  config_system:
+    description: 'Multi-level settings and preferences'
+    color: '#9C27B0'
+    shape: 'gear'
+
+edgeComponents:
+  user_interaction:
+    description: 'User input and command processing'
+    color: '#4285F4'
+    style: 'solid'
+
+  api_call:
+    description: 'External API communication'
+    color: '#34A853'
+    style: 'dashed'
+
+  tool_execution:
+    description: 'Tool invocation and result processing'
+    color: '#EA4335'
+    style: 'solid'
+
+  data_flow:
+    description: 'Information passing between components'
+    color: '#FBBC04'
+    style: 'solid'
+
+  configuration:
+    description: 'Settings and policy application'
+    color: '#9AA0A6'
+    style: 'dotted'
+
+  extension_point:
+    description: 'Plugin and extension interfaces'
+    color: '#FF6D01'
+    style: 'dashed'
