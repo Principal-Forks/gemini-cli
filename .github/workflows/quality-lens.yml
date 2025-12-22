@@ -44,8 +44,8 @@ jobs:
               const fs = require('fs');
               const results = JSON.parse(fs.readFileSync('results.json', 'utf8'));
 
-              // Show hexagon scores
-              const hex = results.qualityMetrics?.hexagon || {};
+              // Show hexagon scores (use first package for single-package repos)
+              const hex = results.qualityMetrics?.packages?.[0]?.hexagon || {};
               console.log('');
               console.log('Quality Hexagon Scores:');
               console.log('───────────────────────');
@@ -54,7 +54,7 @@ jobs:
                 const score = hex[dim] ?? 0;
                 const bar = '█'.repeat(Math.floor(score / 10)) + '░'.repeat(10 - Math.floor(score / 10));
                 const status = score === 0 ? '⚠️  NEEDS SETUP' : score >= 80 ? '✅' : score >= 50 ? '⚡' : '⚠️';
-                console.log(`  ${dim.padEnd(14)} ${bar} ${score.toString().padStart(3)}% ${status}`);
+                console.log('  ' + dim.padEnd(14) + ' ' + bar + ' ' + score.toString().padStart(3) + '% ' + status);
               }
 
               // Show lens details
@@ -81,10 +81,10 @@ jobs:
                     note = ' - Could not parse output';
                   }
                 } else if (hasIssues) {
-                  status = `📋 ${r.issues.length} issues`;
+                  status = '📋 ' + r.issues.length + ' issues';
                 }
 
-                console.log(`  ${r.lens.id.padEnd(12)} ${status}${note}`);
+                console.log('  ' + r.lens.id.padEnd(12) + ' ' + status + note);
               }
 
               // Show action items if needed
@@ -101,7 +101,7 @@ jobs:
                 console.log('  • ESLint: Ensure .eslintrc or eslint.config.js exists');
                 console.log('  • Jest: Ensure jest.config.js and test files exist');
                 console.log('  • TypeScript: Ensure tsconfig.json is valid');
-                console.log('  • Run "npm ci" locally to verify dependencies');
+                console.log('  • Run npm ci locally to verify dependencies');
               }
 
               console.log('');
