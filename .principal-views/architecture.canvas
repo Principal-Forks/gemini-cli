@@ -7,8 +7,8 @@
     {
       "id": "user",
       "type": "text",
-      "x": 340,
-      "y": 45,
+      "x": 248,
+      "y": -620,
       "width": 120,
       "height": 80,
       "color": "#4285F4",
@@ -21,8 +21,8 @@
     {
       "id": "cli",
       "type": "text",
-      "x": 330,
-      "y": 185,
+      "x": 494,
+      "y": -584,
       "width": 140,
       "height": 80,
       "color": "#4285F4",
@@ -35,8 +35,8 @@
     {
       "id": "terminal",
       "type": "text",
-      "x": 380,
-      "y": 325,
+      "x": 765,
+      "y": -583,
       "width": 140,
       "height": 80,
       "color": "#34A853",
@@ -49,8 +49,8 @@
     {
       "id": "core",
       "type": "text",
-      "x": 580,
-      "y": 325,
+      "x": 765,
+      "y": -445,
       "width": 140,
       "height": 80,
       "color": "#EA4335",
@@ -63,8 +63,8 @@
     {
       "id": "context",
       "type": "text",
-      "x": 831,
-      "y": 463,
+      "x": 1022,
+      "y": -446,
       "width": 140,
       "height": 80,
       "color": "#FBBC04",
@@ -77,8 +77,8 @@
     {
       "id": "tools",
       "type": "text",
-      "x": 36,
-      "y": 463,
+      "x": 1019,
+      "y": -556,
       "width": 140,
       "height": 80,
       "color": "#FF6D01",
@@ -91,8 +91,8 @@
     {
       "id": "confirmation",
       "type": "text",
-      "x": 130,
-      "y": 45,
+      "x": 1019,
+      "y": -731,
       "width": 140,
       "height": 80,
       "color": "#9AA0A6",
@@ -105,8 +105,8 @@
     {
       "id": "file_service",
       "type": "text",
-      "x": 623,
-      "y": 760,
+      "x": 1594,
+      "y": -218,
       "width": 140,
       "height": 80,
       "color": "#0F9D58",
@@ -119,8 +119,8 @@
     {
       "id": "git_service",
       "type": "text",
-      "x": 434,
-      "y": 759,
+      "x": 1419,
+      "y": -220,
       "width": 140,
       "height": 80,
       "color": "#F4B400",
@@ -133,8 +133,8 @@
     {
       "id": "shell_service",
       "type": "text",
-      "x": 239,
-      "y": 755,
+      "x": 1245,
+      "y": -221,
       "width": 140,
       "height": 80,
       "color": "#DB4437",
@@ -147,8 +147,8 @@
     {
       "id": "model_config",
       "type": "text",
-      "x": 605,
-      "y": 464,
+      "x": 765,
+      "y": -189,
       "width": 140,
       "height": 80,
       "color": "#673AB7",
@@ -161,10 +161,10 @@
     {
       "id": "builtin_tools",
       "type": "text",
-      "x": 530,
-      "y": 605,
+      "x": 1419,
+      "y": -451,
       "width": 140,
-      "height": 80,
+      "height": 119,
       "color": "#607D8B",
       "text": "Built-in Tools",
       "pv": {
@@ -175,10 +175,10 @@
     {
       "id": "mcp_tools",
       "type": "text",
-      "x": 330,
-      "y": 605,
+      "x": 1232,
+      "y": -448,
       "width": 140,
-      "height": 80,
+      "height": 120,
       "color": "#795548",
       "text": "MCP Tools",
       "pv": {
@@ -189,8 +189,8 @@
     {
       "id": "policy_engine",
       "type": "text",
-      "x": 529,
-      "y": 186,
+      "x": 524,
+      "y": -240,
       "width": 140,
       "height": 80,
       "color": "#E91E63",
@@ -203,8 +203,8 @@
     {
       "id": "config_system",
       "type": "text",
-      "x": 730,
-      "y": 45,
+      "x": 325,
+      "y": -344,
       "width": 140,
       "height": 80,
       "color": "#9C27B0",
@@ -217,8 +217,8 @@
     {
       "id": "gemini_api",
       "type": "text",
-      "x": 462,
-      "y": 466,
+      "x": 1022,
+      "y": -341,
       "width": 140,
       "height": 80,
       "color": "#4285F4",
@@ -231,8 +231,8 @@
     {
       "id": "vscode",
       "type": "text",
-      "x": 530,
-      "y": 45,
+      "x": 495,
+      "y": -472,
       "width": 140,
       "height": 80,
       "color": "#007ACC",
@@ -245,8 +245,8 @@
     {
       "id": "a2a_server",
       "type": "text",
-      "x": 286,
-      "y": 466,
+      "x": 1021,
+      "y": -238,
       "width": 140,
       "height": 80,
       "color": "#FF5722",
@@ -265,7 +265,10 @@
       "fromSide": "right",
       "toSide": "left",
       "label": "commands",
-      "color": "#FBBC04"
+      "color": "#FBBC04",
+      "pv": {
+        "edgeType": "user_interaction"
+      }
     },
     {
       "id": "cli_to_terminal",
@@ -274,7 +277,10 @@
       "fromSide": "right",
       "toSide": "left",
       "label": "render",
-      "color": "#FBBC04"
+      "color": "#FBBC04",
+      "pv": {
+        "edgeType": "data_flow"
+      }
     },
     {
       "id": "cli_to_core",
@@ -283,7 +289,10 @@
       "fromSide": "right",
       "toSide": "left",
       "label": "requests",
-      "color": "#FBBC04"
+      "color": "#FBBC04",
+      "pv": {
+        "edgeType": "data_flow"
+      }
     },
     {
       "id": "core_to_context",
@@ -292,7 +301,10 @@
       "fromSide": "right",
       "toSide": "left",
       "label": "manages",
-      "color": "#FBBC04"
+      "color": "#FBBC04",
+      "pv": {
+        "edgeType": "data_flow"
+      }
     },
     {
       "id": "core_to_tools",
@@ -301,43 +313,10 @@
       "fromSide": "right",
       "toSide": "left",
       "label": "invokes",
-      "color": "#EA4335"
-    },
-    {
-      "id": "tools_to_confirmation",
-      "fromNode": "tools",
-      "toNode": "confirmation",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "requires_approval",
-      "color": "#FBBC04"
-    },
-    {
-      "id": "confirmation_to_cli",
-      "fromNode": "confirmation",
-      "toNode": "cli",
-      "fromSide": "left",
-      "toSide": "bottom",
-      "label": "prompts_user",
-      "color": "#FBBC04"
-    },
-    {
-      "id": "tools_to_builtin",
-      "fromNode": "tools",
-      "toNode": "builtin_tools",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "loads",
-      "color": "#FF6D01"
-    },
-    {
-      "id": "tools_to_mcp",
-      "fromNode": "tools",
-      "toNode": "mcp_tools",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "loads",
-      "color": "#FF6D01"
+      "color": "#EA4335",
+      "pv": {
+        "edgeType": "tool_execution"
+      }
     },
     {
       "id": "builtin_to_file",
@@ -346,7 +325,10 @@
       "fromSide": "bottom",
       "toSide": "top",
       "label": "uses",
-      "color": "#EA4335"
+      "color": "#EA4335",
+      "pv": {
+        "edgeType": "tool_execution"
+      }
     },
     {
       "id": "builtin_to_git",
@@ -355,7 +337,10 @@
       "fromSide": "bottom",
       "toSide": "top",
       "label": "uses",
-      "color": "#EA4335"
+      "color": "#EA4335",
+      "pv": {
+        "edgeType": "tool_execution"
+      }
     },
     {
       "id": "builtin_to_shell",
@@ -364,70 +349,120 @@
       "fromSide": "bottom",
       "toSide": "top",
       "label": "uses",
-      "color": "#EA4335"
+      "color": "#EA4335",
+      "pv": {
+        "edgeType": "tool_execution"
+      }
     },
     {
-      "id": "core_to_gemini",
-      "fromNode": "core",
-      "toNode": "gemini_api",
-      "fromSide": "bottom",
+      "id": "edge-tools-mcp_tools-1766440646605",
+      "fromNode": "tools",
+      "toNode": "mcp_tools",
+      "fromSide": "right",
       "toSide": "top",
-      "label": "communicates",
-      "color": "#34A853"
+      "pv": {
+        "edgeType": "extension_point"
+      }
     },
     {
-      "id": "core_to_model_config",
+      "id": "edge-tools-builtin_tools-1766440646605",
+      "fromNode": "tools",
+      "toNode": "builtin_tools",
+      "fromSide": "right",
+      "toSide": "top",
+      "pv": {
+        "edgeType": "extension_point"
+      }
+    },
+    {
+      "id": "edge-vscode-cli-1766441104069",
+      "fromNode": "vscode",
+      "toNode": "cli",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "pv": {
+        "edgeType": "extension_point"
+      }
+    },
+    {
+      "id": "edge-confirmation-cli-1766441104069",
+      "fromNode": "confirmation",
+      "toNode": "cli",
+      "fromSide": "left",
+      "toSide": "top",
+      "pv": {
+        "edgeType": "user_interaction"
+      }
+    },
+    {
+      "id": "edge-tools-confirmation-1766441104069",
+      "fromNode": "tools",
+      "toNode": "confirmation",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "pv": {
+        "edgeType": "data_flow"
+      }
+    },
+    {
+      "id": "edge-core-model_config-1766441104069",
       "fromNode": "core",
       "toNode": "model_config",
       "fromSide": "bottom",
       "toSide": "top",
-      "label": "configured_by",
-      "color": "#9AA0A6"
+      "pv": {
+        "edgeType": "configuration"
+      }
     },
     {
-      "id": "policy_to_core",
+      "id": "edge-core-a2a_server-1766441104069",
+      "fromNode": "core",
+      "toNode": "a2a_server",
+      "fromSide": "right",
+      "toSide": "left",
+      "pv": {
+        "edgeType": "api_call"
+      }
+    },
+    {
+      "id": "edge-config_system-core-1766441104069",
+      "fromNode": "config_system",
+      "toNode": "core",
+      "fromSide": "right",
+      "toSide": "left",
+      "pv": {
+        "edgeType": "configuration"
+      }
+    },
+    {
+      "id": "edge-policy_engine-core-1766441104069",
       "fromNode": "policy_engine",
       "toNode": "core",
       "fromSide": "right",
-      "toSide": "bottom",
-      "label": "restricts",
-      "color": "#9AA0A6"
+      "toSide": "left",
+      "pv": {
+        "edgeType": "configuration"
+      }
     },
     {
-      "id": "config_to_policy",
+      "id": "edge-core-gemini_api-1766441104069",
+      "fromNode": "core",
+      "toNode": "gemini_api",
+      "fromSide": "right",
+      "toSide": "left",
+      "pv": {
+        "edgeType": "api_call"
+      }
+    },
+    {
+      "id": "edge-config_system-policy_engine-1766441104069",
       "fromNode": "config_system",
       "toNode": "policy_engine",
       "fromSide": "right",
       "toSide": "left",
-      "label": "defines",
-      "color": "#9AA0A6"
-    },
-    {
-      "id": "config_to_core",
-      "fromNode": "config_system",
-      "toNode": "core",
-      "fromSide": "right",
-      "toSide": "bottom",
-      "label": "configures",
-      "color": "#9AA0A6"
-    },
-    {
-      "id": "vscode_to_cli",
-      "fromNode": "vscode",
-      "toNode": "cli",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "integrates",
-      "color": "#FF6D01"
-    },
-    {
-      "id": "core_to_a2a",
-      "fromNode": "core",
-      "toNode": "a2a_server",
-      "fromSide": "bottom",
-      "toSide": "top",
-      "label": "communicates",
-      "color": "#34A853"
+      "pv": {
+        "edgeType": "configuration"
+      }
     }
   ]
 }
